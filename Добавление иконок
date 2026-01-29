@@ -1,0 +1,6 @@
+Подключите Font Awesome в <head> HTML:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+Добавьте иконки к кнопкам:
+<button class="edit"><i class="fas fa-pen"></i> Редактировать</button>
+<button class="delete"><i class="fas fa-trash"></i> Удалить</button>
