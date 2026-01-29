@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Название сайта</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/add-post">Добавить пост</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Форма добавления поста -->
+        <section id="add-post-form">
+            <h2>Добавить пост</h2>
+            <form action="/add-post" method="POST">
+                <input type="text" name="title" placeholder="Заголовок поста" required>
+                <textarea name="content" placeholder="Текст поста" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <!-- Список постов -->
+        <section id="posts-list">
+            <article class="post">
+                <h3>Заголовок поста 1</h3>
+                <p>Краткое описание поста 1...</p>
+                <p>Дата: 01.01.2023</p>
+                <div class="controls">
+                    <button class="edit">Редактировать</button>
+                    <button class="delete">Удалить</button>
+                </div>
+            </article>
+            <!-- Повторить для каждого поста -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Мой блог</p>
+    </footer>
+</body>
+</html>
